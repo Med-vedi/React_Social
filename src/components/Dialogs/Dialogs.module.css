@@ -1,0 +1,61 @@
+.dialogs {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr;
+    /* grid-template-areas: 
+    "ava msg"; */
+    /* display: grid;
+    grid-template-columns: 1fr 5fr; */
+
+
+}
+
+.dialogs_items {
+
+    /* padding: 10px; */
+}
+.dialogs_items > button {
+    background-color: black;
+
+}
+.dialog {
+    /* grid-area: ava; */
+    position: relative;
+    margin: 20px;
+}
+.dialog_name {
+    text-decoration: none;
+    color: #000;
+
+
+}
+.dialog_name > span {
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+
+
+}
+
+.dialog:hover>a {
+    color: #ffffff;
+
+
+}
+
+.avatar_dialog {
+    width: 30px;
+    border-radius: 30px;
+}
+
+.messages {
+    padding: 20px;
+}
+.message {
+    margin: 5px;
+    padding: 4px;
+    /* color: #000;
+    background-color: #fff;
+    border-radius: 20px; */
+
+}

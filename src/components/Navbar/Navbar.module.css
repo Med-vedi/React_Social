@@ -1,0 +1,71 @@
+.nav {
+    grid-area: n;
+
+    background-color: black;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+.item a {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    --initialTextColor: #FFF;
+    --slideTextColor: black;
+
+    --initialBgColor: black;
+    --slideBgColor: #FFF;
+
+    color: var(--initialTextColor);
+
+    background-image: linear-gradient(90deg,
+            var(--initialBgColor) 0%,
+            var(--initialBgColor) 50%,
+            var(--slideBgColor) 50%,
+            var(--slideBgColor) 100%);
+    background-size: 200%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+        color .2s linear;
+    transition-delay: 0.0s, 0.15s;
+}
+
+.item a:hover {
+    font-size: 20px;
+    color: var(--slideTextColor);
+    cursor: pointer;
+    background-position: -100% 100%;
+}
+
+
+.ava_nav_item {
+    display: inline-block;
+    justify-content: space-around;
+    position: relative;
+    margin: 50px 0;
+    width: 20%;
+    padding: 5%;
+        
+}
+.avatar_dialog {
+    width: 100%;
+    border-radius: 30px;
+    
+}
+.ava_nav_item span {
+    bottom: 0;
+    background-color: black;
+    color: blanchedalmond;
+    visibility: hidden;
+}
+.ava_nav_item:hover {
+    width: 25%;
+
+}
+.ava_nav_item:hover > span {
+    visibility: visible;
+
+}
+

@@ -1,0 +1,9 @@
+.item {
+  color: black;
+  font-family: sans-serif;
+  font-family: bold;
+}
+
+.description_block {
+  padding: 10px;
+}
