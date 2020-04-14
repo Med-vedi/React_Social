@@ -24,10 +24,12 @@ const App = props => {
         <Route
           path="/profile"
           render={() => (
-            <Profile 
-            profilePage={props.state.profilePage} 
-            updateNewPostText={props.updateNewPostText}
-            addPost={props.addPost} />
+            <Profile
+              profilePage={props.state.profilePage}
+              updateNewPostText={props.updateNewPostText}
+              addPost={props.addPost}
+              // updateMessage={props.updateMessage}
+            />
           )}
         />
         <Route path="/music" render={() => <Music />} />

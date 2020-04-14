@@ -6,7 +6,7 @@ const MyPosts = props => {
   let postsElements = props.posts.map(p => (
     <Post msg={p.msg} likesCount={p.likesCount} />
   ));
-  
+
   let newPostElement = React.createRef();
 
   let addPost = () => {
@@ -18,7 +18,6 @@ const MyPosts = props => {
     props.updateNewPostText(text);
   };
 
-  
   return (
     <div className={`${s.item} ${s.posts_block}`}>
       <h3>My posts</h3>
