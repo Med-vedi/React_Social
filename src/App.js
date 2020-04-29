@@ -9,7 +9,7 @@ import Music from "./components/Navbar/Music/Music";
 import News from "./components/Navbar/News/News";
 import Settings from "./components/Navbar/Settings/Settings";
 
-const App = props => {
+const App = (props) => {
   return (
     <div className="app_wrapper">
       <Header />
@@ -19,14 +19,14 @@ const App = props => {
 
         <Route
           path="/dialogs"
-          render={() => <Dialogs state={props.state.dialogsPage} />}
+          render={() => <Dialogs store={props.store} />}
         />
         <Route
           path="/profile"
           render={() => (
             <Profile
               profilePage={props.state.profilePage}
-              dispatch = {props.dispatch}
+              dispatch={props.dispatch}
             />
           )}
         />
