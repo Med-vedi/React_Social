@@ -1,7 +1,6 @@
-import { dialogsReducer } from './dialogs-reducer';
+import { dialogsReducer } from "./dialogs-reducer";
 import { profileReducer } from "./profile-reducer";
 import { sidebarReducer } from "./sidebar-reducer";
-
 
 let store = {
   _state: {
@@ -57,9 +56,6 @@ let store = {
     this._callSubscriber(this._state);
   },
 };
-
-
-
 
 export default store;
 window.store = store;
